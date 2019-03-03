@@ -11,8 +11,9 @@ function setup() {
   createCanvas(800, 800);
   background(0);
   mic = new p5.AudioIn();
-  mic.start();
-  mic.connect();
+  document.getElementById("em").addEventListener("onclick", () => {
+    mic.start();
+  });
 
   s.on("mic", (mic) => {
     background(0);
