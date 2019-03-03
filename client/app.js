@@ -12,6 +12,7 @@ function setup() {
   background(0);
   mic = new p5.AudioIn();
   mic.start();
+  mic.connect();
 
   s.on("mic", (mic) => {
     background(0);
