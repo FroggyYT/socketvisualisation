@@ -10,8 +10,8 @@ var points = [];
 function setup() {
   createCanvas(800, 800);
   background(0);
-  mic = new p5.AudioIn();
   document.getElementById("em").addEventListener("onclick", () => {
+    mic = new p5.AudioIn();
     mic.start();
   });
 
